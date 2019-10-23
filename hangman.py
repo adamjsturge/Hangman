@@ -1,4 +1,4 @@
-import _random
+import random
 def replace_at_index(x,y,z):
     iy = int(y)
     yy = int(iy) + 1
@@ -14,7 +14,7 @@ def update_counts(dic, x):
             dic[x[i]] = 1
 def get_guess(word, dic):
     while True:
-        x = input("Guess: ")
+        x = raw_input("Guess: ")
         if x == "":
             print "Wrong"
         if len(x) != 1:
